@@ -1,0 +1,21 @@
+---
+title: "10-import"
+output: html_notebook
+---
+
+# Needed Libraries
+
+```{r}
+library(tidyverse)
+library(janitor)
+library(glue)
+library(assertr)
+```
+# Import Data
+
+```{r}
+library(readr)
+attrition <- read_csv("data/WA_Fn-UseC_-HR-Employee-Attrition.csv") %>%
+  clean_names()
+```
+
